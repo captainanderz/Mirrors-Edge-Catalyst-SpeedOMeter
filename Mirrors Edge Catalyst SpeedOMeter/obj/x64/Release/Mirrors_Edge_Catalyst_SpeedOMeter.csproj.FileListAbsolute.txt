@@ -1,0 +1,23 @@
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\bin\x64\Release\Mirrors_Edge_Catalyst_SpeedOMeter.exe.config
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\bin\x64\Release\Mirrors_Edge_Catalyst_SpeedOMeter.exe
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\bin\x64\Release\Mirrors_Edge_Catalyst_SpeedOMeter.pdb
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\bin\x64\Release\SharpDX.Direct2D1.dll
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\bin\x64\Release\SharpDX.Direct3D11.dll
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\bin\x64\Release\SharpDX.dll
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\bin\x64\Release\SharpDX.DXGI.dll
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\bin\x64\Release\SharpDX.xml
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\bin\x64\Release\SharpDX.Direct2D1.xml
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\bin\x64\Release\SharpDX.Direct3D11.xml
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\bin\x64\Release\SharpDX.DXGI.xml
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\obj\x64\Release\Mirrors_Edge_Catalyst_SpeedOMeter.SpeedOMeter.resources
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\obj\x64\Release\Mirrors_Edge_Catalyst_SpeedOMeter.Properties.Resources.resources
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\obj\x64\Release\Mirrors_Edge_Catalyst_SpeedOMeter.csproj.GenerateResource.Cache
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\obj\x64\Release\Mirrors_Edge_Catalyst_SpeedOMeter.exe
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\obj\x64\Release\Mirrors_Edge_Catalyst_SpeedOMeter.pdb
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\obj\x64\Release\Mirrors_Edge_Catalyst_SpeedOMeter.csprojResolveAssemblyReference.cache
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\obj\x64\Release\Mirrors_Edge_Catalyst_SpeedOMeter.Menu.resources
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\bin\x64\Release\ThemeColorPicker.dll
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\bin\x64\Release\ThemeColorPicker.pdb
+C:\TFS\GitHub\Mirrors-Edge-Catalyst-SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\bin\x64\Release\Mirrors_Edge_Catalyst_SpeedOMeter.exe.config
+C:\TFS\GitHub\Mirrors-Edge-Catalyst-SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\obj\x64\Release\Mirrors_Edge_Catalyst_SpeedOMeter.exe
+C:\TFS\GitHub\Mirrors-Edge-Catalyst-SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\obj\x64\Release\Mirrors_Edge_Catalyst_SpeedOMeter.pdb

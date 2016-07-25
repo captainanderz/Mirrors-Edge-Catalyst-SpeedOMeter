@@ -1,0 +1,6 @@
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\bin\x64\Debug\Mirrors_Edge_Catalyst_SpeedOMeter.exe.config
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\obj\x64\Debug\Mirrors_Edge_Catalyst_SpeedOMeter.csprojResolveAssemblyReference.cache
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\obj\x64\Debug\Mirrors_Edge_Catalyst_SpeedOMeter.SpeedOMeter.resources
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\obj\x64\Debug\Mirrors_Edge_Catalyst_SpeedOMeter.Menu.resources
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\obj\x64\Debug\Mirrors_Edge_Catalyst_SpeedOMeter.Properties.Resources.resources
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\obj\x64\Debug\Mirrors_Edge_Catalyst_SpeedOMeter.csproj.GenerateResource.Cache

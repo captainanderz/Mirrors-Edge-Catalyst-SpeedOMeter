@@ -1,0 +1,17 @@
+D:\projects\19 - Office 2010 Theme Color Picker\ThemeColorPicker\ThemeColorPicker\bin\Release\ThemeColorPicker.dll
+D:\projects\19 - Office 2010 Theme Color Picker\ThemeColorPicker\ThemeColorPicker\bin\Release\ThemeColorPicker.pdb
+D:\projects\19 - Office 2010 Theme Color Picker\ThemeColorPicker\ThemeColorPicker\obj\Release\ThemeColorPicker.Properties.Resources.resources
+D:\projects\19 - Office 2010 Theme Color Picker\ThemeColorPicker\ThemeColorPicker\obj\Release\System.Windows.Forms.ThemeColorPicker.resources
+D:\projects\19 - Office 2010 Theme Color Picker\ThemeColorPicker\ThemeColorPicker\obj\Release\System.Windows.Forms.ThemeColorPickerWindow.resources
+D:\projects\19 - Office 2010 Theme Color Picker\ThemeColorPicker\ThemeColorPicker\obj\Release\ThemeColorPicker.csproj.GenerateResource.Cache
+D:\projects\19 - Office 2010 Theme Color Picker\ThemeColorPicker\ThemeColorPicker\obj\Release\ThemeColorPicker.dll
+D:\projects\19 - Office 2010 Theme Color Picker\ThemeColorPicker\ThemeColorPicker\obj\Release\ThemeColorPicker.pdb
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\ThemeColorPicker\bin\Release\ThemeColorPicker.dll
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\ThemeColorPicker\bin\Release\ThemeColorPicker.pdb
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\ThemeColorPicker\obj\Release\ThemeColorPicker.csprojResolveAssemblyReference.cache
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\ThemeColorPicker\obj\Release\ThemeColorPicker.Properties.Resources.resources
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\ThemeColorPicker\obj\Release\System.Windows.Forms.ThemeColorPicker.resources
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\ThemeColorPicker\obj\Release\System.Windows.Forms.ThemeColorPickerWindow.resources
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\ThemeColorPicker\obj\Release\ThemeColorPicker.csproj.GenerateResource.Cache
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\ThemeColorPicker\obj\Release\ThemeColorPicker.dll
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\ThemeColorPicker\obj\Release\ThemeColorPicker.pdb

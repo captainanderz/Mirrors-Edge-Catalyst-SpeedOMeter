@@ -1,0 +1,8 @@
+D:\projects\19 - Office 2010 Theme Color Picker\ThemeColorPicker\ThemeColorPicker\bin\Debug\ThemeColorPicker.dll
+D:\projects\19 - Office 2010 Theme Color Picker\ThemeColorPicker\ThemeColorPicker\bin\Debug\ThemeColorPicker.pdb
+D:\projects\19 - Office 2010 Theme Color Picker\ThemeColorPicker\ThemeColorPicker\obj\Debug\ThemeColorPicker.Properties.Resources.resources
+D:\projects\19 - Office 2010 Theme Color Picker\ThemeColorPicker\ThemeColorPicker\obj\Debug\ThemeColorPicker.csproj.GenerateResource.Cache
+D:\projects\19 - Office 2010 Theme Color Picker\ThemeColorPicker\ThemeColorPicker\obj\Debug\ThemeColorPicker.dll
+D:\projects\19 - Office 2010 Theme Color Picker\ThemeColorPicker\ThemeColorPicker\obj\Debug\ThemeColorPicker.pdb
+D:\projects\19 - Office 2010 Theme Color Picker\ThemeColorPicker\ThemeColorPicker\obj\Debug\System.Windows.Forms.ThemeColorPicker.resources
+D:\projects\19 - Office 2010 Theme Color Picker\ThemeColorPicker\ThemeColorPicker\obj\Debug\System.Windows.Forms.ThemeColorPickerWindow.resources

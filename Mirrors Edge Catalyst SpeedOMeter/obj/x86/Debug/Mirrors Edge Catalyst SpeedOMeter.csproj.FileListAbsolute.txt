@@ -1,0 +1,17 @@
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\bin\x86\Debug\Mirrors Edge Catalyst SpeedOMeter.exe.config
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\bin\x86\Debug\Mirrors Edge Catalyst SpeedOMeter.exe
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\bin\x86\Debug\Mirrors Edge Catalyst SpeedOMeter.pdb
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\obj\x86\Debug\Mirrors Edge Catalyst SpeedOMeter.csprojResolveAssemblyReference.cache
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\obj\x86\Debug\Mirrors_Edge_Catalyst_SpeedOMeter.Form1.resources
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\obj\x86\Debug\Mirrors_Edge_Catalyst_SpeedOMeter.Properties.Resources.resources
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\obj\x86\Debug\Mirrors Edge Catalyst SpeedOMeter.csproj.GenerateResource.Cache
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\obj\x86\Debug\Mirrors Edge Catalyst SpeedOMeter.exe
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\obj\x86\Debug\Mirrors Edge Catalyst SpeedOMeter.pdb
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\bin\x86\Debug\SharpDX.Direct2D1.dll
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\bin\x86\Debug\SharpDX.Direct3D11.dll
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\bin\x86\Debug\SharpDX.dll
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\bin\x86\Debug\SharpDX.DXGI.dll
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\bin\x86\Debug\SharpDX.xml
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\bin\x86\Debug\SharpDX.Direct2D1.xml
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\bin\x86\Debug\SharpDX.Direct3D11.xml
+C:\TFS\Mirrors Edge Catalyst SpeedOMeter\Mirrors Edge Catalyst SpeedOMeter\bin\x86\Debug\SharpDX.DXGI.xml
