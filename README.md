@@ -1,6 +1,4 @@
-# Mirrors-Edge-Catalyst-SpeedOMeter
-
-# SpeedOMeter
+# Mirrors Edge:Catalyst SpeedOMeter
 A simple SpeedOMeter for Mirrors Edge Catalyst               
 **Windowed/Borderless only**                                 
 **It will say its a virus, but its not. Because windows thinks it is, is because the program is using "user32.dll" and "kernel32.dll"**
