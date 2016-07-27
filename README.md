@@ -3,7 +3,7 @@ A simple SpeedOMeter for Mirrors Edge Catalyst
 **Windowed/Borderless only**                                 
 **It will say its a virus, but its not. Because windows thinks it is, is because the program is using "user32.dll" and "kernel32.dll"**
 
-![Alt](http://i.imgur.com/WN9v1Pt.gif)
+http://i.imgur.com/WN9v1Pt.gif
 ![Menu](http://puu.sh/pWlXv/184bb3fc9c.png)
 
 # **[Download](https://drive.google.com/open?id=0B1XPCxvsEnGUTkxXbXhCelFSeHM)**
