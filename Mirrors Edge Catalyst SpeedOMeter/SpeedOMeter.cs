@@ -12,6 +12,13 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
 {
     public partial class SpeedOMeter : Form
     {
+
+        /**************************************************************
+         *                                                            *
+         *   FORM USED TO DISPLAY SPEED WITH NON FULLSCREEN METHOD    *
+         *                                                            *
+         **************************************************************/
+
         private static readonly PrivateFontCollection Pfc = new PrivateFontCollection();
         private readonly SpeedOMeter thisSpeedOMeter;
         private Process _process;
@@ -37,7 +44,7 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
         private float _Height { get; set; }
         private float _Width { get; set; }
 
-        private void Form1_Load_1(object sender, EventArgs e)
+        private void SpeedOMeter_Load(object sender, EventArgs e)
         {
             _procMonThread = new Thread(ProcMonThreadFunc);
             _procMonThread.Start();
@@ -160,7 +167,7 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
 
         // PAINT PAINT PAINT PAINT PAINT PAINT PAINT PAINT PAINT PAINT PAINT PAINT PAINT PAINT PAINT PAINT PAINT PAINT PAINT PAINT PAINT PAINT PAINT
 
-        private void Form1_Paint(object sender, PaintEventArgs e)
+        private void SpeedOMeter_Paint(object sender, PaintEventArgs e)
         {
             var graphics = e.Graphics;
 

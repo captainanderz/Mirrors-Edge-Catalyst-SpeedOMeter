@@ -57,8 +57,8 @@
             this.Text = "SpeedOMeter";
             this.TopMost = true;
             this.TransparencyKey = System.Drawing.Color.Black;
-            this.Load += new System.EventHandler(this.Form1_Load_1);
-            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
+            this.Load += new System.EventHandler(this.SpeedOMeter_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.SpeedOMeter_Paint);
             this.ResumeLayout(false);
 
         }
