@@ -19,15 +19,19 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
 {
     public partial class Menu : Form
     {
-        /************************************************************
-         * TODO : _ Serialize user settings, save them on Exit      *
-         *          and restore them on launch                      *
-         *        _ Add a Font selector for Windowed                *
-         *          .... and maybe Fullscreen too                   *
-         *        _ fix crashes when modifying FS values and FS is  *
-         *          not enabled                                     *
-         *        _ fix destroyers not called on exit               *
-         ************************************************************/
+        /*********************************************************************
+         * TODO : _ Serialize user settings, save them on Exit               *
+         *          and restore them on launch                               *
+         *        _ Add a Font selector for Windowed                         *
+         *          .... and maybe Fullscreen too                            *
+         *        _ fix crashes when modifying FS values and FS is           *
+         *          not enabled                                              *
+         *        _ clean those names ...                                    *
+         *           numericUpDown1_ValueChanged wtf is this ?!?             *
+         *        _ fix DecimalValue being update does not call              *
+         *               fpsHijacker.setDecimal (only if fpsHijacker!= null  *
+         *        _ fix destroyers not called on exit                        *
+         *********************************************************************/
 
 
 
@@ -256,7 +260,8 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
 
             AlphaFontTextBox.Text = AlphaFontScaleBar.Value.ToString();
             FSAlphaVal = AlphaFontScaleBar.Value;
-            fpsHijacker.setalpha((byte)FSAlphaVal);
+            if (fpsHijacker != null)
+                fpsHijacker.setalpha((byte)FSAlphaVal);
         }
 
         private void AlphaFontTextBox_TextChanged(object sender, EventArgs e)
@@ -272,7 +277,8 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
                 // Parse text value, check it's within 0-255 and modify ScaleBar dynamicaly
                 FSAlphaVal = parsedText;
                 AlphaFontScaleBar.Value = parsedText;
-                fpsHijacker.setalpha((byte)FSAlphaVal);
+                if (fpsHijacker != null)
+                    fpsHijacker.setalpha((byte)FSAlphaVal);
             }
             else
                 // If user typed giberish, fallback to the scaleBar Value
@@ -281,17 +287,26 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
 
         private void XOffsetUIValue_ValueChanged(object sender, EventArgs e)
         {
-            fpsHijacker.setxOffset((int)XOffsetUIValue.Value);
+            if (fpsHijacker != null)
+                fpsHijacker.setxOffset((int)XOffsetUIValue.Value);
         }
 
         private void YOffsetUIValue_ValueChanged(object sender, EventArgs e)
         {
-            fpsHijacker.setyOffset((int)XOffsetUIValue.Value);
+            if (fpsHijacker != null)
+                fpsHijacker.setyOffset((int)XOffsetUIValue.Value);
         }
 
         private void ScaleFontUIValue_ValueChanged(object sender, EventArgs e)
         {
-            fpsHijacker.setdisplayScale((byte)ScaleFontUIValue.Value);
+            if (fpsHijacker != null)
+                fpsHijacker.setdisplayScale((byte)ScaleFontUIValue.Value);
+        }
+
+        private void UpdateRateMenu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (fpsHijacker != null)
+                fpsHijacker.sethsTickRate((int)UpdateRateMenu.SelectedItem);
         }
     }
 }

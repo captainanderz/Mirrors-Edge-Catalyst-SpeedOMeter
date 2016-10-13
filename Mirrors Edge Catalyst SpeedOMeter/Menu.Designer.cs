@@ -220,6 +220,7 @@
             this.UpdateRateMenu.Size = new System.Drawing.Size(121, 21);
             this.UpdateRateMenu.TabIndex = 8;
             this.UpdateRateMenu.Text = "Update Rate ms";
+            this.UpdateRateMenu.SelectedIndexChanged += new System.EventHandler(this.UpdateRateMenu_SelectedIndexChanged);
             // 
             // FullScreenHackCheckBox
             // 
