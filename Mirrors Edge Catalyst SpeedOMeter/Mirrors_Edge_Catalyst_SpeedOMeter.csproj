@@ -114,6 +114,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FpsHijacker.cs" />
     <Compile Include="SpeedOMeter.cs">
       <SubType>Form</SubType>
     </Compile>

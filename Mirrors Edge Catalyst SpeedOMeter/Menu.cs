@@ -90,7 +90,7 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
                         {
                             UpdateRateMenu.SelectedItem = 50;
                         }
-                        SpeedOMeter = new SpeedOMeter((int)numericUpDown1.Value, ColorPickerColor, (int)UpdateRateMenu.SelectedItem);
+                        SpeedOMeter = new SpeedOMeter((int)DecimalsNumericBox.Value, ColorPickerColor, (int)UpdateRateMenu.SelectedItem);
                         new Thread(() => Application.Run(SpeedOMeter)).Start();
 
                         LaunchSpeedOMeter.ForeColor = Color.Green;
@@ -98,9 +98,14 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
                 }
                 else
                 {
-                    //TODO
 
+                    //TODO pass correct parameters to FpsHijacke, for not only tickRate
+
+                    FpsHijacker fpsHj = new FpsHijacker(1000, 5, 100, 100, 100); 
                     /*
+                     * \/ ALL OF THE BELOW DONE IN FpsHijacker \/
+                     * 
+                     * 
                      * Display speed hijacking In-Game FPS Counter Overlay
                      * 
                      * How to do so :
@@ -158,12 +163,12 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
-            PublicProperties.AmountOfDecimals = (int) numericUpDown1.Value;
-            if (numericUpDown1.Value != 2)
+            PublicProperties.AmountOfDecimals = (int) DecimalsNumericBox.Value;
+            if (DecimalsNumericBox.Value != 2)
             {
-                if (numericUpDown1.Value > NumericLastValue)
+                if (DecimalsNumericBox.Value > NumericLastValue)
                 {
-                    NumericLastValue = (int) numericUpDown1.Value;
+                    NumericLastValue = (int) DecimalsNumericBox.Value;
                     PreviewColorLabel.Text = PreviewColorLabel.Text + "0";
 
                     if (PreviewColorLabel.Text.ToCharArray().Count() > 5)
@@ -177,10 +182,10 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
                     return;
                 }
 
-                if (numericUpDown1.Value < NumericLastValue)
+                if (DecimalsNumericBox.Value < NumericLastValue)
                 {
                     PreviewColorLabel.Font = new Font("Arial Narrow", (PreviewColorLabel.Font.Size + 10));
-                    NumericLastValue = (int) numericUpDown1.Value;
+                    NumericLastValue = (int) DecimalsNumericBox.Value;
                     PreviewColorLabel.Text = PreviewColorLabel.Text.Remove(PreviewColorLabel.Text.Length - 1, 1) + "";
                 }
             }

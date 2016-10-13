@@ -44,7 +44,7 @@
             this.CloseSpeedOMeterButton = new System.Windows.Forms.Button();
             this.SpeedOMeterButtons = new System.Windows.Forms.GroupBox();
             this.DecimalsGroupBox = new System.Windows.Forms.GroupBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.DecimalsNumericBox = new System.Windows.Forms.NumericUpDown();
             this.UpdateRateMenu = new System.Windows.Forms.ComboBox();
             this.FullScreenHackCheckBox = new System.Windows.Forms.CheckBox();
             this.SpeedOMeterSettingsContainer = new System.Windows.Forms.Panel();
@@ -66,7 +66,7 @@
             this.PreviewTextContainer.SuspendLayout();
             this.SpeedOMeterButtons.SuspendLayout();
             this.DecimalsGroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DecimalsNumericBox)).BeginInit();
             this.SpeedOMeterSettingsContainer.SuspendLayout();
             this.FullScreenSettingsContainer.SuspendLayout();
             this.ScaleFontGroupBox.SuspendLayout();
@@ -190,7 +190,7 @@
             // 
             // DecimalsGroupBox
             // 
-            this.DecimalsGroupBox.Controls.Add(this.numericUpDown1);
+            this.DecimalsGroupBox.Controls.Add(this.DecimalsNumericBox);
             this.DecimalsGroupBox.Location = new System.Drawing.Point(10, 0);
             this.DecimalsGroupBox.Name = "DecimalsGroupBox";
             this.DecimalsGroupBox.Size = new System.Drawing.Size(190, 50);
@@ -198,19 +198,19 @@
             this.DecimalsGroupBox.TabStop = false;
             this.DecimalsGroupBox.Text = "Decimals";
             // 
-            // numericUpDown1
+            // DecimalsNumericBox
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(7, 20);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(178, 20);
-            this.numericUpDown1.TabIndex = 0;
-            this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown1.Value = new decimal(new int[] {
+            this.DecimalsNumericBox.Location = new System.Drawing.Point(7, 20);
+            this.DecimalsNumericBox.Name = "DecimalsNumericBox";
+            this.DecimalsNumericBox.Size = new System.Drawing.Size(178, 20);
+            this.DecimalsNumericBox.TabIndex = 0;
+            this.DecimalsNumericBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.DecimalsNumericBox.Value = new decimal(new int[] {
             2,
             0,
             0,
             0});
-            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
+            this.DecimalsNumericBox.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
             // UpdateRateMenu
             // 
@@ -411,7 +411,7 @@
             this.PreviewTextContainer.ResumeLayout(false);
             this.SpeedOMeterButtons.ResumeLayout(false);
             this.DecimalsGroupBox.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DecimalsNumericBox)).EndInit();
             this.SpeedOMeterSettingsContainer.ResumeLayout(false);
             this.FullScreenSettingsContainer.ResumeLayout(false);
             this.ScaleFontGroupBox.ResumeLayout(false);
@@ -446,7 +446,7 @@
         private System.Windows.Forms.Button CloseSpeedOMeterButton;
         private System.Windows.Forms.GroupBox SpeedOMeterButtons;
         private System.Windows.Forms.GroupBox DecimalsGroupBox;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown DecimalsNumericBox;
         private System.Windows.Forms.ComboBox UpdateRateMenu;
         private System.Windows.Forms.CheckBox FullScreenHackCheckBox;
         private System.Windows.Forms.Panel SpeedOMeterSettingsContainer;

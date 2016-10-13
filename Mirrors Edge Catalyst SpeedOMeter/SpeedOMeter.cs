@@ -87,22 +87,15 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
 
         private void ReadTimer1_Tick(object sender, EventArgs e)
         {
-            try
-            {
                 // Read Memory
-                address = Mem.ReadInt(Mem.GetModuleAddress("MirrorsEdgeCatalyst.exe") + 0x023DD6F8);
-                address = Mem.ReadInt(address + 0x1e8);
-                address = Mem.ReadInt(address + 0x10);
+                address = Mem.ReadLong(Mem.GetModuleAddress("MirrorsEdgeCatalyst.exe") + 0x023DD6F8);
+                address = Mem.ReadLong(address + 0x1e8);
+                address = Mem.ReadLong(address + 0x10);
                 address += 0x438;
 
                 speed = Math.Round((decimal)Mem.ReadFloat(address), Decimals);
 
                 Invalidate();
-            }
-            catch (Exception)
-            {
-                //ignore
-            }
         }
 
         private void UpdateWindow()

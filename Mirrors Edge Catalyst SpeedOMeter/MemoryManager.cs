@@ -6,6 +6,13 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
 {
     internal class MemoryManager
     {
+        /*************************************************
+         * TODO : _    rewrite using Template            *
+         *        or work, expand and import CatalystAPI *
+         *        _ handle exceptions                    *
+         *************************************************/
+
+
         private Process _process;
         private IntPtr _prochandle;
 
@@ -25,30 +32,46 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
             int nSize,
             out IntPtr lpNumberOfBytesWritten);
 
-        public void WriteFloat(long memaddress, float value)
-        {
-            var buffer = BitConverter.GetBytes(value);
-            var bytesWritten = IntPtr.Zero;
 
-            WriteProcessMemory(_prochandle, memaddress, buffer, buffer.Length, out bytesWritten);
+
+        /*************************************************
+         *                                               *
+         *                READERS SECTION                *
+         *                                               *
+         *************************************************/
+
+
+
+        public byte ReadByte(long memadress) // 1 byte
+        {
+            var val = new byte[sizeof(byte)];
+            var bytesRead = IntPtr.Zero;
+
+            ReadProcessMemory(_prochandle, memadress, val, 1, out bytesRead);
+
+            if ( bytesRead.ToInt32() != 1)
+                throw new UnauthorizedAccessException("Could not read memory");
+
+            return val[0];
         }
 
-        public long ReadInt(long memadress)
+
+        public int ReadInt(long memadress) // 4 bytes
         {
-            var buffer = new byte[sizeof(long)];
+            var buffer = new byte[sizeof(int)];
             var bytesRead = IntPtr.Zero;
 
             ReadProcessMemory(_prochandle, memadress, buffer, buffer.Length, out bytesRead);
 
-            if (bytesRead.ToInt64() != buffer.Length)
-            {
-                return -1;
-            }
+            if (bytesRead.ToInt32() != buffer.Length)
+                throw new UnauthorizedAccessException("Could not read memory");
 
-            return BitConverter.ToInt64(buffer, 0);
+            return BitConverter.ToInt32(buffer, 0);
         }
 
-        public float ReadFloat(long memadress)
+
+
+        public float ReadFloat(long memadress) // 4 bytes
         {
             var buffer = new byte[sizeof(float)];
             var bytesRead = IntPtr.Zero;
@@ -56,12 +79,83 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
             ReadProcessMemory(_prochandle, memadress, buffer, buffer.Length, out bytesRead);
 
             if (bytesRead.ToInt32() != buffer.Length)
-            {
-                return -1;
-            }
+                throw new UnauthorizedAccessException("Could not read memory");
 
             return BitConverter.ToSingle(buffer, 0);
         }
+
+
+        public long ReadLong(long memadress) // 8 bytes
+        {
+            var buffer = new byte[sizeof(long)];
+            var bytesRead = IntPtr.Zero;
+
+            ReadProcessMemory(_prochandle, memadress, buffer, buffer.Length, out bytesRead);
+
+            if (bytesRead.ToInt64() != buffer.Length)
+                throw new UnauthorizedAccessException("Could not read memory");
+
+            return BitConverter.ToInt64(buffer, 0);
+        }
+
+
+
+        /*************************************************
+         *                                               *
+         *               WRITERS SECTION                 *
+         *                                               *
+         *************************************************/
+
+
+
+        public void WriteByte(long memaddress, byte value) // 1 bytes
+        {
+            var buffer = BitConverter.GetBytes(value);
+            var bytesWritten = IntPtr.Zero;
+
+            if (!WriteProcessMemory(_prochandle, memaddress, buffer, buffer.Length, out bytesWritten))
+                throw new UnauthorizedAccessException("Could not write memory");
+        }
+
+
+        public void WriteInt(long memaddress, int value) // 4 bytes
+        {
+            var buffer = BitConverter.GetBytes(value);
+            var bytesWritten = IntPtr.Zero;
+
+            if (!WriteProcessMemory(_prochandle, memaddress, buffer, buffer.Length, out bytesWritten))
+                throw new UnauthorizedAccessException("Could not write memory");
+        }
+
+
+        public void WriteFloat(long memaddress, float value) // 4 bytes
+        {
+            var buffer = BitConverter.GetBytes(value);
+            var bytesWritten = IntPtr.Zero;
+
+            if (!WriteProcessMemory(_prochandle, memaddress, buffer, buffer.Length, out bytesWritten))
+                throw new UnauthorizedAccessException("Could not write memory");
+        }
+
+
+        public void WriteLong(long memaddress, long value) // 8 bytes
+        {
+            var buffer = BitConverter.GetBytes(value);
+            var bytesWritten = IntPtr.Zero;
+
+            if (!WriteProcessMemory(_prochandle, memaddress, buffer, buffer.Length, out bytesWritten))
+                throw new UnauthorizedAccessException("Could not write memory");
+        }
+
+
+
+        /*************************************************
+         *                                               *
+         *                PROCESS LINKER                 *
+         *                                               *
+         *************************************************/
+
+
 
         public void openProcess(string exe)
         {
