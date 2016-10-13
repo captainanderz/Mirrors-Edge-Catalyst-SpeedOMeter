@@ -6,11 +6,11 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
 {
     internal class MemoryManager
     {
-        /*************************************************
-         * TODO : _    rewrite using Template            *
-         *        or work, expand and import CatalystAPI *
-         *        _ handle exceptions                    *
-         *************************************************/
+        /****************************************************
+         * TODO : _ rewrite using Template                  *
+         *        or work on, expand and import CatalystAPI *
+         *        _ handle exceptions                       *
+         ****************************************************/
 
 
         private Process _process;

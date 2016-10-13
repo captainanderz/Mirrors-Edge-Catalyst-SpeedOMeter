@@ -32,6 +32,7 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
 
 
         public SpeedOMeter SpeedOMeter;
+        public FpsHijacker fpsHijacker;
         public SolidBrush ColorPickerColor;
 
         public Menu()
@@ -98,30 +99,15 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
                 }
                 else
                 {
-
-                    //TODO pass correct parameters to FpsHijacke, for not only tickRate
-
-                    FpsHijacker fpsHj = new FpsHijacker(1000, 5, 100, 100, 100); 
-                    /*
-                     * \/ ALL OF THE BELOW DONE IN FpsHijacker \/
-                     * 
-                     * 
-                     * Display speed hijacking In-Game FPS Counter Overlay
-                     * 
-                     * How to do so :
-                     * 1/ Activate in-game FPS counter, by changing the IG variable "PerfOverlay.enable true" AND "PerfOverlay.DrawFPS true"
-                     * 2/ Match UpdateRateMenu's program variable with IG variable "PerfOverlay.FpsTimePeriod"
-                     * 3/ Hijack IG "FPS Displayed value"
-                     *      (warning! different than "IG actual FPS value",
-                     *       "IG FPS Displayed value" is actualized according every "PerfOverlay.FpsTimePeriod"
-                     *       acccording to "IG actual FPS value"
-                     * 
-                     * TODO : translate cheatengine pointer to deepPointer
-                     *       locate PerfOverlay.enable AND PerfOverlay.DrawFPS pointers
-                     *       
-                     */
-
-
+                    // Display Speed using IG Overlay Hijacking method 
+                    // All work done in FPSHijacker.cs
+                    fpsHijacker = new FpsHijacker((int)UpdateRateMenu.SelectedItem,
+                                                  (int)DecimalsNumericBox.Value,
+                                                  (float)ScaleFontUIValue.Value,
+                                                  (int)XOffsetUIValue.Value,
+                                                  (int)YOffsetUIValue.Value,
+                                                  (byte)AlphaFontScaleBar.Value
+                                                   );
                 }
             }
             else
@@ -153,12 +139,18 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
 
         private void CloseSpeedOMeterButton_Click(object sender, EventArgs e)
         {
-            if (LaunchSpeedOMeter.ForeColor == Color.Green)
+            if (!FullScreenMode)
             {
-                SpeedOMeter.SpeedOMeterClose();
-                SpeedOMeter = new SpeedOMeter(0, ColorPickerColor, (int)UpdateRateMenu.SelectedItem); // Random int given with, does not matter
-                LaunchSpeedOMeter.ForeColor = Color.Red;
+
+                if (LaunchSpeedOMeter.ForeColor == Color.Green)
+                {
+                    SpeedOMeter.SpeedOMeterClose();
+                    SpeedOMeter = new SpeedOMeter(0, ColorPickerColor, (int)UpdateRateMenu.SelectedItem); // Random int given wich, does not matter
+                    LaunchSpeedOMeter.ForeColor = Color.Red;
+                }
             }
+            else
+                fpsHijacker.destroy();
         }
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
