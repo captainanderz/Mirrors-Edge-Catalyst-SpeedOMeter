@@ -50,8 +50,8 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
             get
             {
                 address = Mem.ReadLong(baseAddress + 0x023DD6F8); // Jump to adress pointed at "baseAddress + 0x023DD6F8"
-                address = Mem.ReadLong(baseAddress + 0x1e8); // Jump
-                address = Mem.ReadLong(baseAddress + 0x10); // Put your hands up in the air !
+                address = Mem.ReadLong(address + 0x1e8); // Jump
+                address = Mem.ReadLong(address + 0x10); // Put your hands up in the air !
                 address += 0x438;
 
                 return Mem.ReadFloat(address) *(decimals*10)  ; // get Faith's speed
@@ -223,7 +223,7 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
 
 
 
-        public FpsHijacker(int hsTickRate, int decimals, float displayScale_, int xOffset_, int yOffset_, byte alpha_)
+        public FpsHijacker(int hsTickRate_, int decimals, float displayScale_, int xOffset_, int yOffset_, byte alpha_)
         {
             /*
              * hsTickRate <=> Number of time we will write over the IG FPS variable per ms 
@@ -242,6 +242,7 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
 
             /* Initialization of IG variable to display FPS */
             enable = 1; // enable Overlay , should be on by default, but who knows
+            drawFps = 1; // enable "IG FPS counter"
             FpsTimePeriod = float.MaxValue; // Setting IG "FPS value counter" to an absurd value, so it won't be overwritten by the game while we hijack it
             displayFormat = 0; // set the FPS IG counter so it display only the int value we're gonna hijack
             xOffset = xOffset_;
@@ -250,6 +251,7 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
             displayScale = displayScale_;
 
             // Create a timer to hijack the "FPS Value counter" every hsTickRate 
+            hsTickRate = hsTickRate_;
             updateTickTimer = new System.Timers.Timer();
             updateTickTimer.Elapsed += new ElapsedEventHandler(HijackRoutine); // call HijackRoutine every TickRate
             updateTickTimer.Interval = hsTickRate; // TickRate in ms
@@ -274,6 +276,7 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
              *  TODO : capture previous variables state, store them, and restore them  *
              ***************************************************************************/
             enable = 1;
+            drawFps = 0;
             xOffset = 10;
             yOffset = 10;
             alpha = 255;
@@ -293,7 +296,7 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
         private void HijackRoutine(object source, ElapsedEventArgs e)
         {
             /* Simply Hijack the FPS Value Counter*/
-            displayedFpsValue = speed;
+            // displayedFpsValue = speed; //TODO FIX THE GETTER !!!!!!!!!!!!
         }
 
 
@@ -324,6 +327,12 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
         public void setdecimals(int decimals_)
         {
             decimals = decimals_;
+        }
+
+        public void sethsTickRate(int hsTickRate_ )
+        {
+            hsTickRate = hsTickRate_;
+            updateTickTimer.Interval = hsTickRate; // update clock TickRate
         }
 
     }

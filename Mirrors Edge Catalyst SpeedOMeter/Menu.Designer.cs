@@ -278,6 +278,7 @@
             0,
             0,
             0});
+            this.ScaleFontUIValue.ValueChanged += new System.EventHandler(this.ScaleFontUIValue_ValueChanged);
             // 
             // YOffsetGroupBox
             // 
@@ -300,6 +301,7 @@
             0,
             0,
             0});
+            this.YOffsetUIValue.ValueChanged += new System.EventHandler(this.YOffsetUIValue_ValueChanged);
             // 
             // XOffsetGroupBox
             // 
@@ -322,6 +324,7 @@
             0,
             0,
             0});
+            this.XOffsetUIValue.ValueChanged += new System.EventHandler(this.XOffsetUIValue_ValueChanged);
             // 
             // AlphaFontGroupBox
             // 

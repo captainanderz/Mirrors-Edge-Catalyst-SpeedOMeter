@@ -19,6 +19,19 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
 {
     public partial class Menu : Form
     {
+        /************************************************************
+         * TODO : _ Serialize user settings, save them on Exit      *
+         *          and restore them on launch                      *
+         *        _ Add a Font selector for Windowed                *
+         *          .... and maybe Fullscreen too                   *
+         *        _ fix crashes when modifying FS values and FS is  *
+         *          not enabled                                     *
+         *        _ fix destroyers not called on exit               *
+         ************************************************************/
+
+
+
+
         private PublicProperties PublicProperties = new PublicProperties();
         private static PrivateFontCollection Pfc = new PrivateFontCollection();
         private const int NumericDefaultValue = 2;
@@ -27,8 +40,7 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
         private static int NumericLastValue { get; set; }
         private static bool FullScreenMode { get; set; } // Describe whether the program shall display the speed
                                                          // using In-Game overlay hijacking or overlaying app in Window mode
-        // Every FS prefixed Variable is specific to the FullScreenMode
-        private static int FSAlphaVal = 255;
+        private static int FSAlphaVal = 255; // Alpha Value of font used in FullScreen Mode
 
 
         public SpeedOMeter SpeedOMeter;
@@ -45,7 +57,7 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
              * On creation of the Menu, we need to resize the size of
              * CentralSettingsContainer & relocate BottomSettingsContainer
              * in order to display only the informations necessary according to FullSCreenHackCheckbox
-             * Thus :
+             * Thus the following hack
              */
             CentralSettingsContainer.Height = SpeedOMeterSettingsContainer.Height; // resize CentralSettingsContainer
             FullScreenSettingsContainer.Top = 0; // relocate FullScreenSettings at top of CentralSettingsContainer (even thought it is hidden)
@@ -88,9 +100,7 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
                     if (fc.Count < 2)
                     {
                         if (UpdateRateMenu.SelectedItem == null)
-                        {
                             UpdateRateMenu.SelectedItem = 50;
-                        }
                         SpeedOMeter = new SpeedOMeter((int)DecimalsNumericBox.Value, ColorPickerColor, (int)UpdateRateMenu.SelectedItem);
                         new Thread(() => Application.Run(SpeedOMeter)).Start();
 
@@ -101,6 +111,9 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
                 {
                     // Display Speed using IG Overlay Hijacking method 
                     // All work done in FPSHijacker.cs
+                    //fpsHijacker = new FpsHijacker(40, 3, 9, 100, 150, 100);
+                    if (UpdateRateMenu.SelectedItem == null)
+                        UpdateRateMenu.SelectedItem = 50;
                     fpsHijacker = new FpsHijacker((int)UpdateRateMenu.SelectedItem,
                                                   (int)DecimalsNumericBox.Value,
                                                   (float)ScaleFontUIValue.Value,
@@ -108,6 +121,7 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
                                                   (int)YOffsetUIValue.Value,
                                                   (byte)AlphaFontScaleBar.Value
                                                    );
+                    LaunchSpeedOMeter.ForeColor = Color.Green;
                 }
             }
             else
@@ -150,7 +164,10 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
                 }
             }
             else
+            {
                 fpsHijacker.destroy();
+                LaunchSpeedOMeter.ForeColor = Color.Red;
+            }
         }
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
@@ -191,8 +208,12 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
 
         private void Menu_FormClosed(object sender, FormClosedEventArgs e)
         {
+            //TODO TOFIX why isn't fpsHijacker.destroy() called when exiting the Menu ?!?
             Environment.Exit(Environment.ExitCode);
+            SpeedOMeter.SpeedOMeterClose();
+            fpsHijacker.destroy();
         }
+
 
         private void AddItemsToComboBox()
         {
@@ -235,6 +256,7 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
 
             AlphaFontTextBox.Text = AlphaFontScaleBar.Value.ToString();
             FSAlphaVal = AlphaFontScaleBar.Value;
+            fpsHijacker.setalpha((byte)FSAlphaVal);
         }
 
         private void AlphaFontTextBox_TextChanged(object sender, EventArgs e)
@@ -250,11 +272,26 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
                 // Parse text value, check it's within 0-255 and modify ScaleBar dynamicaly
                 FSAlphaVal = parsedText;
                 AlphaFontScaleBar.Value = parsedText;
+                fpsHijacker.setalpha((byte)FSAlphaVal);
             }
             else
                 // If user typed giberish, fallback to the scaleBar Value
                 AlphaFontTextBox.Text = AlphaFontScaleBar.Value.ToString();
         }
 
+        private void XOffsetUIValue_ValueChanged(object sender, EventArgs e)
+        {
+            fpsHijacker.setxOffset((int)XOffsetUIValue.Value);
+        }
+
+        private void YOffsetUIValue_ValueChanged(object sender, EventArgs e)
+        {
+            fpsHijacker.setyOffset((int)XOffsetUIValue.Value);
+        }
+
+        private void ScaleFontUIValue_ValueChanged(object sender, EventArgs e)
+        {
+            fpsHijacker.setdisplayScale((byte)ScaleFontUIValue.Value);
+        }
     }
 }
