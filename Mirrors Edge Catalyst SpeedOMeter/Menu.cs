@@ -29,9 +29,6 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
          *           CloseSpeedOMeterButton_Click, maybe find a better        *
          *           suited names now that there is two methods               *
          *           etc                                                      *
-         *        _ fix DecimalValue being update does not call               *
-         *               fpsHijacker.setDecimal (only if fpsHijacker!= null   *
-         *               and updating Decimal f*** up the windowed preview    *
          *        _ add supports for on the fly adjustment to windowed method *
          **********************************************************************/
 
@@ -117,7 +114,6 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
                 {
                     // Display Speed using IG Overlay Hijacking method 
                     // All work done in FPSHijacker.cs
-                    //fpsHijacker = new FpsHijacker(40, 3, 9, 100, 150, 100);
                     if (UpdateRateMenu.SelectedItem == null)
                         UpdateRateMenu.SelectedItem = 50;
                     fpsHijacker = new FpsHijacker((int)UpdateRateMenu.SelectedItem,
@@ -177,12 +173,13 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
             }
         }
 
-        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        private void DecimalsNumericBox_ValueChanged(object sender, EventArgs e)
         {
             if (fpsHijacker != null)
                 fpsHijacker.setdecimals((int)DecimalsNumericBox.Value);
 
-            // WTF ?!?
+            // What the Heck ?!? Dude, you're preview is completly broken when you hit more than 2 digits
+            // and the What's up with the Font ? 
             PublicProperties.AmountOfDecimals = (int) DecimalsNumericBox.Value;
             if (DecimalsNumericBox.Value != 2)
             {

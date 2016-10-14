@@ -215,7 +215,7 @@
             0,
             0,
             0});
-            this.DecimalsNumericBox.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
+            this.DecimalsNumericBox.ValueChanged += new System.EventHandler(this.DecimalsNumericBox_ValueChanged);
             // 
             // UpdateRateMenu
             // 

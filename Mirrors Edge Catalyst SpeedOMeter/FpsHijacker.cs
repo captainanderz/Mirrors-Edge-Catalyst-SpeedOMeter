@@ -295,7 +295,7 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
         private void HijackRoutine(object source, ElapsedEventArgs e)
         {
             /* Simply Hijack the FPS Value Counter*/
-            displayedFpsValue = speed; //TODO FIX THE GETTER !!!!!!!!!!!!
+            displayedFpsValue = speed;
         }
 
 
