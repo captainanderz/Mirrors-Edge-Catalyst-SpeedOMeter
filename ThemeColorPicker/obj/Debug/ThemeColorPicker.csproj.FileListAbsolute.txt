@@ -6,3 +6,11 @@ D:\projects\19 - Office 2010 Theme Color Picker\ThemeColorPicker\ThemeColorPicke
 D:\projects\19 - Office 2010 Theme Color Picker\ThemeColorPicker\ThemeColorPicker\obj\Debug\ThemeColorPicker.pdb
 D:\projects\19 - Office 2010 Theme Color Picker\ThemeColorPicker\ThemeColorPicker\obj\Debug\System.Windows.Forms.ThemeColorPicker.resources
 D:\projects\19 - Office 2010 Theme Color Picker\ThemeColorPicker\ThemeColorPicker\obj\Debug\System.Windows.Forms.ThemeColorPickerWindow.resources
+C:\Prog\Mirrors-Edge-Catalyst-SpeedOMeter\ThemeColorPicker\bin\Debug\ThemeColorPicker.dll
+C:\Prog\Mirrors-Edge-Catalyst-SpeedOMeter\ThemeColorPicker\bin\Debug\ThemeColorPicker.pdb
+C:\Prog\Mirrors-Edge-Catalyst-SpeedOMeter\ThemeColorPicker\obj\Debug\ThemeColorPicker.Properties.Resources.resources
+C:\Prog\Mirrors-Edge-Catalyst-SpeedOMeter\ThemeColorPicker\obj\Debug\System.Windows.Forms.ThemeColorPicker.resources
+C:\Prog\Mirrors-Edge-Catalyst-SpeedOMeter\ThemeColorPicker\obj\Debug\System.Windows.Forms.ThemeColorPickerWindow.resources
+C:\Prog\Mirrors-Edge-Catalyst-SpeedOMeter\ThemeColorPicker\obj\Debug\ThemeColorPicker.csproj.GenerateResource.Cache
+C:\Prog\Mirrors-Edge-Catalyst-SpeedOMeter\ThemeColorPicker\obj\Debug\ThemeColorPicker.dll
+C:\Prog\Mirrors-Edge-Catalyst-SpeedOMeter\ThemeColorPicker\obj\Debug\ThemeColorPicker.pdb

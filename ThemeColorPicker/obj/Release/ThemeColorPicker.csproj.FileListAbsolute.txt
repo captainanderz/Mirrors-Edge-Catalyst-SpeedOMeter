@@ -15,3 +15,12 @@ C:\TFS\Mirrors Edge Catalyst SpeedOMeter\ThemeColorPicker\obj\Release\System.Win
 C:\TFS\Mirrors Edge Catalyst SpeedOMeter\ThemeColorPicker\obj\Release\ThemeColorPicker.csproj.GenerateResource.Cache
 C:\TFS\Mirrors Edge Catalyst SpeedOMeter\ThemeColorPicker\obj\Release\ThemeColorPicker.dll
 C:\TFS\Mirrors Edge Catalyst SpeedOMeter\ThemeColorPicker\obj\Release\ThemeColorPicker.pdb
+C:\Prog\Mirrors-Edge-Catalyst-SpeedOMeter\ThemeColorPicker\bin\Release\ThemeColorPicker.dll
+C:\Prog\Mirrors-Edge-Catalyst-SpeedOMeter\ThemeColorPicker\bin\Release\ThemeColorPicker.pdb
+C:\Prog\Mirrors-Edge-Catalyst-SpeedOMeter\ThemeColorPicker\obj\Release\ThemeColorPicker.csprojResolveAssemblyReference.cache
+C:\Prog\Mirrors-Edge-Catalyst-SpeedOMeter\ThemeColorPicker\obj\Release\ThemeColorPicker.Properties.Resources.resources
+C:\Prog\Mirrors-Edge-Catalyst-SpeedOMeter\ThemeColorPicker\obj\Release\System.Windows.Forms.ThemeColorPicker.resources
+C:\Prog\Mirrors-Edge-Catalyst-SpeedOMeter\ThemeColorPicker\obj\Release\System.Windows.Forms.ThemeColorPickerWindow.resources
+C:\Prog\Mirrors-Edge-Catalyst-SpeedOMeter\ThemeColorPicker\obj\Release\ThemeColorPicker.csproj.GenerateResource.Cache
+C:\Prog\Mirrors-Edge-Catalyst-SpeedOMeter\ThemeColorPicker\obj\Release\ThemeColorPicker.dll
+C:\Prog\Mirrors-Edge-Catalyst-SpeedOMeter\ThemeColorPicker\obj\Release\ThemeColorPicker.pdb

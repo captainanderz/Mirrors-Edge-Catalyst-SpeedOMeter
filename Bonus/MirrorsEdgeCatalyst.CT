@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="19">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>24</ID>
+      <Description>"Delay Displayed (Not Working / Protected)"</Description>
+      <VariableType>String</VariableType>
+      <Length>9</Length>
+      <Unicode>0</Unicode>
+      <ZeroTerminate>1</ZeroTerminate>
+      <Address>"THREADSTACK0"-00000608</Address>
+      <Offsets>
+        <Offset>20</Offset>
+        <Offset>168</Offset>
+        <Offset>6D0</Offset>
+        <Offset>3C0</Offset>
+        <Offset>518</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>31</ID>
+      <Description>"FPS Value Displayed"</Description>
+      <LastState Value="53.63169861" RealAddress="1425639B4"/>
+      <VariableType>Float</VariableType>
+      <Address>"MirrorsEdgeCatalyst.exe"+028352C8</Address>
+      <Offsets>
+        <Offset>4C</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>5</ID>
+      <Description>"Real FPS Value"</Description>
+      <LastState Value="56.79827881" RealAddress="3029FA38"/>
+      <VariableType>Float</VariableType>
+      <Address>"MirrorsEdgeCatalyst.exe"+025638B8</Address>
+      <Offsets>
+        <Offset>58</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>27</ID>
+      <Description>"Faith's Speed (X&amp;Z)"</Description>
+      <LastState Value="0" RealAddress="B2630858"/>
+      <VariableType>Float</VariableType>
+      <Address>"MirrorsEdgeCatalyst.exe"+023DD6F8</Address>
+      <Offsets>
+        <Offset>438</Offset>
+        <Offset>10</Offset>
+        <Offset>1E8</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>15</ID>
+      <Description>"PerfOverlay"</Description>
+      <Options moManualExpandCollapse="1"/>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>8</ID>
+          <Description>"Enable"</Description>
+          <LastState Value="1" RealAddress="1EB83FF4"/>
+          <VariableType>Byte</VariableType>
+          <Address>"MirrorsEdgeCatalyst.exe"+024AA100</Address>
+          <Offsets>
+            <Offset>74</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>3</ID>
+          <Description>"DrawFPS"</Description>
+          <LastState Value="01" RealAddress="1EB83FFA"/>
+          <ShowAsHex>1</ShowAsHex>
+          <VariableType>Byte</VariableType>
+          <Address>"MirrorsEdgeCatalyst.exe"+024AA100</Address>
+          <Offsets>
+            <Offset>7A</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>2</ID>
+          <Description>"DrawFrameGraph"</Description>
+          <LastState Value="00" RealAddress="1EB83FF8"/>
+          <ShowAsHex>1</ShowAsHex>
+          <VariableType>Byte</VariableType>
+          <Address>"MirrorsEdgeCatalyst.exe"+024AA100</Address>
+          <Offsets>
+            <Offset>78</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>29</ID>
+          <Description>"FpsDisplayAlpha"</Description>
+          <LastState Value="255" RealAddress="1EB83FFC"/>
+          <VariableType>Byte</VariableType>
+          <Address>"MirrorsEdgeCatalyst.exe"+024AA100</Address>
+          <Offsets>
+            <Offset>7C</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>22</ID>
+          <Description>"FpsDisplayFormat"</Description>
+          <LastState Value="1" RealAddress="1EB83FE4"/>
+          <VariableType>Byte</VariableType>
+          <Address>"MirrorsEdgeCatalyst.exe"+024AA100</Address>
+          <Offsets>
+            <Offset>64</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>10</ID>
+          <Description>"FpsDisplayOffsetX"</Description>
+          <LastState Value="10" RealAddress="1EB83FEC"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"MirrorsEdgeCatalyst.exe"+024AA100</Address>
+          <Offsets>
+            <Offset>6C</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>28</ID>
+          <Description>"FpsDisplayOffsetY"</Description>
+          <LastState Value="10" RealAddress="1EB83FF0"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"MirrorsEdgeCatalyst.exe"+024AA100</Address>
+          <Offsets>
+            <Offset>70</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>30</ID>
+          <Description>"FpsDisplayScale"</Description>
+          <LastState Value="3" RealAddress="1EB83FE8"/>
+          <VariableType>Float</VariableType>
+          <Address>"MirrorsEdgeCatalyst.exe"+024AA100</Address>
+          <Offsets>
+            <Offset>68</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>6</ID>
+          <Description>"FpsTimePeriod (tickrate)"</Description>
+          <LastState Value="20" RealAddress="1EB83FE0"/>
+          <VariableType>Float</VariableType>
+          <Address>"MirrorsEdgeCatalyst.exe"+024AA100</Address>
+          <Offsets>
+            <Offset>60</Offset>
+          </Offsets>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>

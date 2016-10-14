@@ -121,7 +121,7 @@
   <data name="ColorPickerMenu.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAK4AAACmCAIAAADMPSPUAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAAEIRJREFUeF7tnFGI5dddgO+TIAjmzQcRBwxSIQ8pSJWO2DyImIp0RIXsw65TLJgH
+        vAAADrwBlbxySQAAEIRJREFUeF7tnFGI5dddgO+TIAjmzQcRBwxSIQ8pSJWO2DyImIp0RIXsw65TLJgH
         H5Y8qAjJrguG9KFxiDYVMruEuqGB+DDaSHboxqxuSUNpZRs66Y5pyk63a5OY1rtrsytRWf/33HPvPff7
         /ufcu+6Guju/Hx/tnXvOd2cy32/uTKB08LnntoKgY7QK169fH155N9i3dAsQqxCMiFUIMrEKQSZWIcgs
         XIXTD69iDm1unzi4unrw+K4u30p2jh/Kn7DxubaPdKcPb+v54MZZ8l1hd7PrcujEzvjDnfd9FbYf6RIf
@@ -206,6 +206,15 @@
   </metadata>
   <metadata name="CheckGameStatus.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>434, 18</value>
+  </metadata>
+  <data name="FullScreenModeInstructions.Text" xml:space="preserve">
+    <value>! Caution !
+During FullScreen Mode the FPS In-Game Variable is hijacked to display speed
+Thus you won't be able to display FPS with that method anymore.
+This mode also works in Windowed and Borderless Window Mode.</value>
+  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>60</value>
   </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
