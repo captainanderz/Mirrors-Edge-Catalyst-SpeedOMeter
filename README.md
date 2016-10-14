@@ -7,9 +7,9 @@ A simple SpeedOMeter for Mirrors Edge Catalyst
 
 ![Menu](http://i.imgur.com/fYZSass.gif)
 
-# **[Download](https://hijackedbrain.com/data/Mirror's%20Edge%20Catalyst%20SpeedOMeter%20V1.3.zip)** via my Personal Website
+# **[Download](https://hijackedbrain.com/data/Mirror's%20Edge%20Catalyst%20SpeedOMeter%20V1.3.zip)**# via my Personal Website
 
-# **[Download](https://drive.google.com/file/d/0B7Rb1GcJJ6xkVFF2bjBNYWpqOW8/view?usp=sharing)** via Google Drive
+# **[Download](https://drive.google.com/file/d/0B7Rb1GcJJ6xkVFF2bjBNYWpqOW8/view?usp=sharing)**# via Google Drive
 
 # Disclaimer !
 
