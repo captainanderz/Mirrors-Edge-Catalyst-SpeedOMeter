@@ -19,12 +19,12 @@ you might want to save your modifications before using this software as it will 
 If you have no idea what this speech is all about, then don't worry, you're not concerned.
 
 
-# TODO Updates 1.4v
+# planned features for Updates 1.4v (release date ? You wish)
 * Serialization / automatic save of settings 
 * Dynamic setting support for Windowed/Borderless method
 * Trying to hijack another IG variable to print a proper string instead of a simple Int
 
-# Updates 1.3v
+# Updates 1.3v (Latest x86/x64 version)
 * Added Fullscreen Compatible Method with better performance
 * Added xOffset, YOffset, Alpha, Font Scaling (for fullscreen Method only)
 * Dynamic settings, you can tweak the SpeedOMeter while it's running (fullscreen Method Only)
