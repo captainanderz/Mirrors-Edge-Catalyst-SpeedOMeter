@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Timers;
 
 /*
- * TODO : insert CT file in github
+ * TODO : fix speed getter !!!!!!
  **/
 
 
@@ -281,7 +281,6 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
             yOffset = 10;
             alpha = 255;
             displayScale = 3;
-            drawFps = 0;
         }
 
 

@@ -25,12 +25,15 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
          *        _ Add a Font selector for Windowed                         *
          *          .... and maybe Fullscreen too                            *
          *        _ fix crashes when modifying FS values and FS is           *
-         *          not enabled                                              *
+         *          not enabled (Decimal only now)                           *
          *        _ clean those names ...                                    *
          *           numericUpDown1_ValueChanged wtf is this ?!?             *
+         *           CloseSpeedOMeterButton_Click, maybe find a better       *
+         *           suited names now that there is two methods              *
+         *           etc                                                     *
          *        _ fix DecimalValue being update does not call              *
          *               fpsHijacker.setDecimal (only if fpsHijacker!= null  *
-         *        _ fix destroyers not called on exit                        *
+         *        _ add supports for on the fly adjustment to windowed method*
          *********************************************************************/
 
 
@@ -176,6 +179,7 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
+            // WTF ?!?
             PublicProperties.AmountOfDecimals = (int) DecimalsNumericBox.Value;
             if (DecimalsNumericBox.Value != 2)
             {
@@ -212,10 +216,11 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
 
         private void Menu_FormClosed(object sender, FormClosedEventArgs e)
         {
-            //TODO TOFIX why isn't fpsHijacker.destroy() called when exiting the Menu ?!?
+            if (SpeedOMeter != null)
+               SpeedOMeter.SpeedOMeterClose();
+            if (fpsHijacker != null)
+                fpsHijacker.destroy();
             Environment.Exit(Environment.ExitCode);
-            SpeedOMeter.SpeedOMeterClose();
-            fpsHijacker.destroy();
         }
 
 
@@ -308,5 +313,6 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
             if (fpsHijacker != null)
                 fpsHijacker.sethsTickRate((int)UpdateRateMenu.SelectedItem);
         }
+
     }
 }
