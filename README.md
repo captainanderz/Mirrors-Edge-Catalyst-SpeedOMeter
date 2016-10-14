@@ -1,5 +1,7 @@
 # Mirrors Edge:Catalyst SpeedOMeter
+
 A simple SpeedOMeter for Mirrors Edge Catalyst               
+
 **Windows might declare this program a virus (which it is not...) simply because we're using "user32.dll" and "kernel32.dll"**
 **Trust issues ? Might as well check this virustotal page result =>**
 [Virustotal](https://www.virustotal.com/fr/file/0631e5310b7a01c0a93d1b1d5a5f459f48900fc92261dc225b6d415b9aef1719/analysis/1476412576/)
@@ -7,9 +9,9 @@ A simple SpeedOMeter for Mirrors Edge Catalyst
 
 ![Menu](http://i.imgur.com/fYZSass.gif)
 
-# **[Download](https://hijackedbrain.com/data/Mirror's%20Edge%20Catalyst%20SpeedOMeter%20V1.3.zip)**# via my Personal Website
+# **[Download via my Personal Website](https://hijackedbrain.com/data/Mirror's%20Edge%20Catalyst%20SpeedOMeter%20V1.3.zip)**
 
-# **[Download](https://drive.google.com/file/d/0B7Rb1GcJJ6xkVFF2bjBNYWpqOW8/view?usp=sharing)**# via Google Drive
+# **[Download via Google Drive](https://drive.google.com/file/d/0B7Rb1GcJJ6xkVFF2bjBNYWpqOW8/view?usp=sharing)**
 
 # Disclaimer !
 
