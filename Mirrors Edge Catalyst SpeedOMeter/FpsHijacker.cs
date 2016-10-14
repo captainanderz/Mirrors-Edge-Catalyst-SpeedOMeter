@@ -6,10 +6,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Timers;
 
-/*
- * TODO : fix speed getter !!!!!!
- **/
-
 
 namespace Mirrors_Edge_Catalyst_SpeedOMeter
 {
@@ -39,7 +35,8 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
         private static long address; // address used to point to IG variables, used in getters and setters 
         private static MemoryManager Mem; // MemoryManager to allow speedOmeter to fiddle with Mirror's Edge Catalyst memory
         private static int hsTickRate; // "Hijack RefreshRate" of the "FPS Displayed Value" by IG Overlay, expressed in ms
-        private static int decimals; // number of faith's speed's decimals to draw on screen
+        private static float decimalShift; // multiplicator needed to display correct number digit related to faith's speed's
+                                         // based on decimal value give by user input
 
 
         /*****************************
@@ -54,9 +51,9 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
                 address = Mem.ReadLong(address + 0x10); // Put your hands up in the air !
                 address += 0x438;
 
-                return Mem.ReadFloat(address) *(decimals*10)  ; // get Faith's speed
-                                                                // and manipulate it so we "shift" its value enough to get rid of the comma
-                                                                // according to the decimals variable decided by the User
+                return Mem.ReadFloat(address) * decimalShift;
+                         // get Faith's speed and "shift" its value enough to get rid of the comma
+                         // according to the decimals variable decided by the User
             }
             set
             {
@@ -223,7 +220,7 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
 
 
 
-        public FpsHijacker(int hsTickRate_, int decimals, float displayScale_, int xOffset_, int yOffset_, byte alpha_)
+        public FpsHijacker(int hsTickRate_, int decimals_, float displayScale_, int xOffset_, int yOffset_, byte alpha_)
         {
             /*
              * hsTickRate <=> Number of time we will write over the IG FPS variable per ms 
@@ -234,6 +231,10 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
              * yOffset_ <=> yOffset of the display from top right corner
              * alpha_ <=> alpha channel, transparency setting
              */
+
+            // Initialize some variables
+            setdecimals( decimals_ );
+            hsTickRate = hsTickRate_;
 
             // Initialize Memory Manager and baseAdress to avoid recalculating all the time
             Mem = new MemoryManager();
@@ -251,7 +252,6 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
             displayScale = displayScale_;
 
             // Create a timer to hijack the "FPS Value counter" every hsTickRate 
-            hsTickRate = hsTickRate_;
             updateTickTimer = new System.Timers.Timer();
             updateTickTimer.Elapsed += new ElapsedEventHandler(HijackRoutine); // call HijackRoutine every TickRate
             updateTickTimer.Interval = hsTickRate; // TickRate in ms
@@ -295,7 +295,7 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
         private void HijackRoutine(object source, ElapsedEventArgs e)
         {
             /* Simply Hijack the FPS Value Counter*/
-            // displayedFpsValue = speed; //TODO FIX THE GETTER !!!!!!!!!!!!
+            displayedFpsValue = speed; //TODO FIX THE GETTER !!!!!!!!!!!!
         }
 
 
@@ -325,7 +325,7 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
 
         public void setdecimals(int decimals_)
         {
-            decimals = decimals_;
+            decimalShift = (float)Math.Pow(10, decimals_-1);
         }
 
         public void sethsTickRate(int hsTickRate_ )

@@ -201,6 +201,11 @@
             // DecimalsNumericBox
             // 
             this.DecimalsNumericBox.Location = new System.Drawing.Point(7, 20);
+            this.DecimalsNumericBox.Maximum = new decimal(new int[] {
+            9,
+            0,
+            0,
+            0});
             this.DecimalsNumericBox.Name = "DecimalsNumericBox";
             this.DecimalsNumericBox.Size = new System.Drawing.Size(178, 20);
             this.DecimalsNumericBox.TabIndex = 0;

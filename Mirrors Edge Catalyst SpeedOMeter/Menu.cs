@@ -171,13 +171,17 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
             }
             else
             {
-                fpsHijacker.destroy();
+                if (fpsHijacker != null)
+                    fpsHijacker.destroy();
                 LaunchSpeedOMeter.ForeColor = Color.Red;
             }
         }
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
+            if (fpsHijacker != null)
+                fpsHijacker.setdecimals((int)DecimalsNumericBox.Value);
+
             // WTF ?!?
             PublicProperties.AmountOfDecimals = (int) DecimalsNumericBox.Value;
             if (DecimalsNumericBox.Value != 2)
@@ -243,6 +247,9 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
                 // hide & unHide elements
                 SpeedOMeterSettingsContainer.Visible = false;
                 FullScreenSettingsContainer.Visible = true;
+                // rename DecimalGroupBox's Label to a better suited text
+                DecimalsGroupBox.Text = "Digits";
+                
                 // raise FullScreenMode Flag
                 FullScreenMode = true;
             }
@@ -251,6 +258,8 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
                 // hide & unHide elements
                 SpeedOMeterSettingsContainer.Visible = true;
                 FullScreenSettingsContainer.Visible = false;
+                // rename DecimalGroupBox's Label to a better suited text
+                DecimalsGroupBox.Text = "Decimals";
                 // raise FullScreenMode Flag
                 FullScreenMode = false;
             }
