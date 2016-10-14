@@ -19,22 +19,21 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
 {
     public partial class Menu : Form
     {
-        /*********************************************************************
-         * TODO : _ Serialize user settings, save them on Exit               *
-         *          and restore them on launch                               *
-         *        _ Add a Font selector for Windowed                         *
-         *          .... and maybe Fullscreen too                            *
-         *        _ fix crashes when modifying FS values and FS is           *
-         *          not enabled (Decimal only now)                           *
-         *        _ clean those names ...                                    *
-         *           numericUpDown1_ValueChanged wtf is this ?!?             *
-         *           CloseSpeedOMeterButton_Click, maybe find a better       *
-         *           suited names now that there is two methods              *
-         *           etc                                                     *
-         *        _ fix DecimalValue being update does not call              *
-         *               fpsHijacker.setDecimal (only if fpsHijacker!= null  *
-         *        _ add supports for on the fly adjustment to windowed method*
-         *********************************************************************/
+        /**********************************************************************
+         * TODO : _ Serialize user settings, save them on Exit                *
+         *          and restore them on launch                                *
+         *        _ Add a Font selector for Windowed                          *
+         *          .... and maybe Fullscreen too                             *
+         *        _ clean those names ...                                     *
+         *           numericUpDown1_ValueChanged wtf is this ?!?              *
+         *           CloseSpeedOMeterButton_Click, maybe find a better        *
+         *           suited names now that there is two methods               *
+         *           etc                                                      *
+         *        _ fix DecimalValue being update does not call               *
+         *               fpsHijacker.setDecimal (only if fpsHijacker!= null   *
+         *               and updating Decimal f*** up the windowed preview    *
+         *        _ add supports for on the fly adjustment to windowed method *
+         **********************************************************************/
 
 
 
@@ -299,7 +298,7 @@ namespace Mirrors_Edge_Catalyst_SpeedOMeter
         private void YOffsetUIValue_ValueChanged(object sender, EventArgs e)
         {
             if (fpsHijacker != null)
-                fpsHijacker.setyOffset((int)XOffsetUIValue.Value);
+                fpsHijacker.setyOffset((int)YOffsetUIValue.Value);
         }
 
         private void ScaleFontUIValue_ValueChanged(object sender, EventArgs e)

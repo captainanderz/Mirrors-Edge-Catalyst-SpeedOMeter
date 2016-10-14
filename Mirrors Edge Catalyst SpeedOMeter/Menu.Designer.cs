@@ -294,6 +294,11 @@
             // YOffsetUIValue
             // 
             this.YOffsetUIValue.Location = new System.Drawing.Point(12, 19);
+            this.YOffsetUIValue.Maximum = new decimal(new int[] {
+            90000,
+            0,
+            0,
+            0});
             this.YOffsetUIValue.Name = "YOffsetUIValue";
             this.YOffsetUIValue.Size = new System.Drawing.Size(52, 20);
             this.YOffsetUIValue.TabIndex = 0;
@@ -317,6 +322,11 @@
             // XOffsetUIValue
             // 
             this.XOffsetUIValue.Location = new System.Drawing.Point(8, 19);
+            this.XOffsetUIValue.Maximum = new decimal(new int[] {
+            90000,
+            0,
+            0,
+            0});
             this.XOffsetUIValue.Name = "XOffsetUIValue";
             this.XOffsetUIValue.Size = new System.Drawing.Size(56, 20);
             this.XOffsetUIValue.TabIndex = 0;
