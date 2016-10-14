@@ -1,7 +1,7 @@
 # Mirrors Edge:Catalyst SpeedOMeter
 A simple SpeedOMeter for Mirrors Edge Catalyst               
-** Windows might declare this program a virus (which it is not...) simply because we're using "user32.dll" and "kernel32.dll"**
-** Trust issues ? Might as well check this virustotal page result **
+**Windows might declare this program a virus (which it is not...) simply because we're using "user32.dll" and "kernel32.dll"**
+**Trust issues ? Might as well check this virustotal page result =>**
 [Virustotal](https://www.virustotal.com/fr/file/0631e5310b7a01c0a93d1b1d5a5f459f48900fc92261dc225b6d415b9aef1719/analysis/1476412576/)
 
 
