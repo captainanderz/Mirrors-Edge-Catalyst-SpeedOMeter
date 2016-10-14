@@ -51,4 +51,4 @@ If you have no idea what this speech is all about, then don't worry, you're not 
 ### Credits ###
 * Thanks to **derwangler** for the float values
 * Thanks to **iMP3RiU5** for helping me with some math problems
-* Thanks to **Tremwil** for moral support, helping me and supporting my Visual Studio Rants 
+* Thanks to **Tremwil** for moral support
