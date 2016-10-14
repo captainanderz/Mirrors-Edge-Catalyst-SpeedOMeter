@@ -25,6 +25,9 @@ If you have no idea what this speech is all about, then don't worry, you're not 
 * Serialization / automatic save of settings 
 * Dynamic setting support for Windowed/Borderless method
 * Trying to hijack another IG variable to print a proper string instead of a simple Int
+* Add a "Launch Mirror's Edge : Catalyst" button to spare the user some effort
+* Allow the user to launch run "FullScreen Mode" hack even thought MEC isn't launched yet (sparing them a alt tab)
+* Add a font selector for windowed/borderless Method, and maybe even Fullscreen Mode (need further investigations)
 
 # Updates 1.3v (Latest x86/x64 version)
 * Added Fullscreen Compatible Method with better performance
